@@ -1,0 +1,22 @@
+Install Pakages;
+
+python3.8
+django
+djangorestframework
+django-rest-knox
+
+mkdir frontend/src/component
+mkdir frontend/{static, templates}/frontend
+
+install webpack,root_dir
+npm init -y ()
+npm i -D webpack webpack-cli # as dev dependies
+
+# babel package to add newer feature of js.
+npm i -D @babel/core babel-loader @babel/present-env @babel/preset-react babel-plugin-transform-class-properties
+
+add script manullly in package.json
+"scripts": {
+    "dev": "webpack --mode development --watch ./leadmanager/frontend/src/index.js --output ./leadmanager/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./leadmanager/frontend/src/index.js --output ./leadmanager/frontend/static/frontend/main.js"
+  },
